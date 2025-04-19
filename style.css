@@ -1,0 +1,26 @@
+:root {
+  --clr-orange: hsl(23, 99%, 63%);
+  --clr-black: #333333;
+}
+
+nav {
+  color: var(--clr-black);
+
+  i {
+    color: var(--clr-orange);
+  }
+
+  .focus-ring {
+    box-shadow: none !important;
+  }
+  .nav-btn {
+    font-size: 1rem;
+    background-color: var(--clr-orange);
+    width: fit-content;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    align-self: center;
+    outline: none;
+    border: none;
+  }
+}
