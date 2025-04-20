@@ -22,7 +22,9 @@ button {
 .purple__text {
   color: var(--clr-purple) !important;
 }
+
 /* ===NAVBAR SECTION=== */
+
 nav {
   font-weight: 400;
 
@@ -48,9 +50,12 @@ nav {
     &:active {
       scale: 0.98;
     }
+
   }
+
 }
 /* ===HERO SECTION=== */
+
 #hero {
   position: relative;
 
@@ -94,12 +99,14 @@ nav {
         background-color: var(--clr-purple);
         display: inline-block;
       }
+
     }
 
     .hero__btn {
       background-color: var(--clr-orange);
       padding-inline: 1.5rem;
     }
+
   }
   .right {
     .carousel-indicators {
@@ -120,8 +127,11 @@ nav {
         opacity: 1;
         background-color: var(--clr-purple);
       }
+
     }
+
   }
+
 }
 
 /* ===ABOUT SECTION=== */
@@ -143,12 +153,14 @@ nav {
       height: 2px;
       background-color: var(--clr-purple);
     }
+
   }
 
   .about__title {
     font-size: 3rem;
     font-weight: 600;
   }
+
 }
 
 /* ===PORTFOLIO SECTION  */
@@ -191,9 +203,11 @@ nav {
     color: inherit;
     text-decoration: none;
   }
+
 }
 
 /* ===PRICES SECTION===  */
+
 #prices {
   margin-block: 5rem;
 
@@ -228,8 +242,11 @@ nav {
         font-weight: 700;
         margin-top: 2rem !important;
       }
+
     }
+
   }
+
 }
 
 /* ===TESTIMONIAL SECTION */
@@ -254,6 +271,7 @@ nav {
       height: 2px;
       background-color: var(--clr-purple);
     }
+
   }
 
   .testimonial__title {
@@ -273,7 +291,9 @@ nav {
     i {
       cursor: pointer;
     }
+
   }
+
 }
 
 /* ===INSTAGRAM SECTION */
@@ -292,5 +312,17 @@ nav {
     height: 0px;
     background-color: transparent;
     box-shadow: 0px 200px 400px 150px #8a47f67a;
+  }
+
+}
+
+/* ===footer=== */
+
+#footer {
+  background-color: var(--clr-black);
+  padding-block: 1.5rem;
+
+  i {
+    color: var(--clr-black);
   }
 }
