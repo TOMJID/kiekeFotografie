@@ -1,6 +1,7 @@
 :root {
   --clr-orange: hsl(23, 99%, 63%);
   --clr-purple: hsl(263, 91%, 62%);
+  --clr-light-purple: hsl(261, 89%, 96%);
   --clr-black: #333333;
 }
 
@@ -126,7 +127,7 @@ nav {
 /* ===ABOUT SECTION=== */
 
 #about {
-  background-color: hsl(261, 89%, 96%);
+  background-color: var(--clr-light-purple);
   padding-block: 5rem;
   font-weight: 400;
 
@@ -223,15 +224,52 @@ nav {
     }
 
     &:nth-child(3) {
-
       .card-text {
-        color: red;
         font-weight: 700;
         margin-top: 2rem !important;
       }
-
     }
-
   }
-  
+}
+
+/* ===TESTIMONIAL SECTION */
+
+#testimonial {
+  padding-block: 5rem;
+  padding-inline: 1rem;
+  background-color: var(--clr-light-purple);
+
+  .testimonial__subtitle {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 50%;
+      left: -15px;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 2px;
+      background-color: var(--clr-purple);
+    }
+  }
+
+  .testimonial__title {
+    font-weight: 600;
+  }
+
+  .testimonial__person {
+    .left {
+      background-color: hsl(262, 91%, 91%);
+    }
+    .testimonial__person-name {
+      display: inline-flex;
+      font-size: 1.1rem;
+    }
+    i {
+      cursor: pointer;
+    }
+  }
 }
