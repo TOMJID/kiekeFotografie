@@ -1,10 +1,16 @@
 :root {
   --clr-orange: hsl(23, 99%, 63%);
+  --clr-purple: hsl(263, 91%, 62%);
   --clr-black: #333333;
 }
 
+body {
+  font-family: "Clash Display", sans-serif;
+}
+/* ===NAVBAR SECTION=== */
 nav {
   color: var(--clr-black);
+  font-weight: 400;
 
   i {
     color: var(--clr-orange);
@@ -22,5 +28,56 @@ nav {
     align-self: center;
     outline: none;
     border: none;
+    transition: scale 0.3s;
+    &:active {
+      scale: 0.98;
+    }
+  }
+}
+/* ===HERO SECTION=== */
+#hero {
+  .left {
+    min-height: 90dvh;
+
+    .hero__title {
+      font-size: 5rem;
+      font-weight: 600;
+
+      span {
+        color: var(--clr-purple);
+      }
+      .purple__line {
+        width: 120px;
+        height: 16px;
+        margin-bottom: 0.5rem;
+        background-color: var(--clr-purple);
+        display: inline-block;
+      }
+    }
+    .hero__btn {
+      background-color: var(--clr-orange);
+      padding-inline: 1.5rem;
+    }
+  }
+  .right {
+    .carousel-indicators {
+      position: absolute;
+      bottom: -3rem;
+
+      button {
+        background-color: var(--clr-black);
+        opacity: 0.5;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 5px;
+        border: none;
+      }
+
+      .active {
+        opacity: 1;
+        background-color: var(--clr-purple);
+      }
+    }
   }
 }
