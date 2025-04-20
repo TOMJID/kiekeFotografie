@@ -7,10 +7,20 @@
 body {
   position: relative;
   font-family: "Clash Display", sans-serif;
+  color: var(--clr-black);
+}
+button {
+  background-color: var(--clr-orange);
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  outline: none;
+  border: none;
+}
+.purple__Text {
+  color: var(--clr-purple) !important;
 }
 /* ===NAVBAR SECTION=== */
 nav {
-  color: var(--clr-black);
   font-weight: 400;
 
   i {
@@ -69,9 +79,6 @@ nav {
       font-size: 5rem;
       font-weight: 600;
 
-      span {
-        color: var(--clr-purple);
-      }
       .purple__line {
         width: 120px;
         height: 16px;
@@ -105,5 +112,28 @@ nav {
         background-color: var(--clr-purple);
       }
     }
+  }
+}
+/* ===ABOUT SECTION=== */
+#about {
+  background-color: hsl(261, 89%, 96%);
+  padding-block: 5rem;
+  font-weight: 400;
+  .about__subtitle {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 2px;
+      background-color: var(--clr-purple);
+    }
+  }
+  .about__title {
+    font-size: 3rem;
+    font-weight: 600;
   }
 }
