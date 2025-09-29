@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="img/bootstrap.png" type="image/x-icon" />
-    <title>Bootstrap assignment</title>
+    <title>Fotografie</title>
     <!-- ===CUSTOM FONT=== -->
     <link
       href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
@@ -28,7 +28,7 @@
         class="navbar navbar-expand-lg navbar-light bg-transparent px-sm-2 px-md-3">
         <div class="container-xl px-2 px-md-3 px-lg-4">
           <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="logo" />
+            <img src="img/logo.png" alt="logo" loading="lazy" />
           </a>
           <button
             class="navbar-toggler border border-0 focus-ring focus-ring-danger"
@@ -113,13 +113,15 @@
                     <img
                       src="img/carousel__1.png"
                       class="d-block w-100"
-                      alt="Slide 1" />
+                      alt="Slide 1"
+                      loading="lazy" />
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img
                       src="img/carousel__2.png"
                       class="d-block w-100"
-                      alt="Slide 2" />
+                      alt="Slide 2"
+                      loading="lazy" />
                   </div>
                 </div>
               </div>
@@ -133,11 +135,23 @@
           <div class="row justify-content-between">
             <div
               class="left col-lg-6 d-flex flex-column flex-md-row align-items-center justify-content-center">
-              <img class="p-1 rounded-3" src=" img/about__1.png" alt="about" />
+              <img
+                class="p-1 rounded-3"
+                src="img/about__1.png"
+                alt="about"
+                loading="lazy" />
               <div
                 class="d-flex flex-column align-self-center justify-content-between">
-                <img class="p-1 rounded-3" src="img/about__2.png" alt="about" />
-                <img class="p-1 rounded-3" src="img/about__3.png" alt="about" />
+                <img
+                  class="p-1 rounded-3"
+                  src="img/about__2.png"
+                  alt="about"
+                  loading="lazy" />
+                <img
+                  class="p-1 rounded-3"
+                  src="img/about__3.png"
+                  alt="about"
+                  loading="lazy" />
               </div>
             </div>
             <div class="right col-lg-6 p-5 p-xl-5">
@@ -188,11 +202,13 @@
             <img
               class="img-fluid px-3 my-3"
               src="img/portfolio__1.png"
-              alt="portfolio" />
+              alt="portfolio"
+              loading="lazy" />
             <img
               class="img-fluid p-3"
               src="img/portfolio__2.png"
-              alt="portfolio" />
+              alt="portfolio"
+              loading="lazy" />
           </div>
         </div>
       </section>
@@ -214,7 +230,7 @@
                   files in large format
                 </h6>
                 <p class="card-text fs-1">$50.00</p>
-                <button class="card-link rounded-5 text-light">
+                <button href="#" class="card-link rounded-5 text-light">
                   Get Purchase
                 </button>
               </div>
@@ -274,7 +290,8 @@
                   <img
                     class="w-25 d-block"
                     src="img/testimonial__mini.png"
-                    alt="Amane Indahnya" />
+                    alt="Amane Indahnya"
+                    loading="lazy" />
                   <h6 class="testimonial__person-name mt-1">Amane Indahnya</h6>
                 </div>
                 <div class="right col-5 ms-5">
@@ -290,7 +307,8 @@
               <img
                 class="img-fluid rounded-5 mt-5"
                 src="img/testimonial.png"
-                alt="testimonial person" />
+                alt="testimonial person"
+                loading="lazy" />
             </div>
           </div>
         </div>
@@ -306,7 +324,8 @@
           <img
             class="img-fluid px-3 mt-3"
             src="img/insta__feed.png"
-            alt="instagram feed" />
+            alt="instagram feed"
+            loading="lazy" />
         </div>
       </section>
 
@@ -314,11 +333,10 @@
         <div class="container-xl">
           <div class="row p-3 mt-5">
             <div class="col-lg-6 d-flex flex-column">
-              <h6 class="fs-1 text-start">Have A Question ?</h6>
+              <h6 class="fs-1 text-start">Have A Question?</h6>
               <p>
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua...
               </p>
               <form class="mx-5 mx-md-0 align-self-center w-100">
                 <div class="mb-3">
@@ -327,7 +345,8 @@
                     type="text"
                     class="form-control"
                     id="exampleInputName"
-                    aria-describedby="nameHelp" />
+                    aria-describedby="nameHelp"
+                    required />
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"
@@ -337,22 +356,33 @@
                     type="email"
                     class="form-control"
                     id="exampleInputEmail1"
-                    aria-describedby="emailHelp" />
+                    aria-describedby="emailHelp"
+                    required />
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label"
-                    >Your Massage</label
+                    >Your Message</label
                   >
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
-                    rows="3"></textarea>
+                    rows="3"
+                    required></textarea>
                 </div>
+                <button
+                  type="submit"
+                  class="btn mt-2 mb-4 btn-primary rounded-5 w-100">
+                  Send Message
+                </button>
               </form>
             </div>
             <div
               class="col-lg-6 d-flex align-items-center justify-content-center">
-              <img class="img-fluid" src="img/contact.png" />
+              <img
+                class="img-fluid"
+                src="img/contact.png"
+                alt="Contact illustration"
+                loading="lazy" />
             </div>
           </div>
         </div>
@@ -362,7 +392,7 @@
     <footer id="footer">
       <div
         class="container-xl d-flex flex-column flex-md-row gap-3 align-items-center justify-content-between px-3">
-        <img src="img/footer__logo.png" alt="logo" />
+        <img src="img/footer__logo.png" alt="logo" loading="lazy" />
         <div>
           <a class="text-light mx-1" href="#">Privacy Policy</a>
           <a class="text-light mx-1" href="#">terms & Conditions</a>
